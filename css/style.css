@@ -260,7 +260,154 @@ footer a {
   color: #FDE68A;
 }
 
-/* 8. Tablet: lebar layar 768px ke atas */
+/* 8. Mode gelap */
+body {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tombol-tema {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #134E4A;
+  border-radius: 6px;
+  background: transparent;
+  color: #134E4A;
+  font-size: 0.9rem;
+}
+
+.tombol-tema:hover,
+.tombol-tema:focus-visible {
+  background-color: #6EE7B7;
+  color: #134E4A;
+}
+
+body.gelap {
+  color: #E2EDF5;
+  background-color: #101B2A;
+}
+
+body.gelap header {
+  background-color: #0B1522;
+  color: #E2EDF5;
+}
+
+body.gelap header h1,
+body.gelap h1,
+body.gelap h2,
+body.gelap h3,
+body.gelap caption {
+  color: #A8DADC;
+}
+
+body.gelap nav a,
+body.gelap .menu-ponsel summary {
+  color: #E2EDF5;
+}
+
+body.gelap nav a:hover,
+body.gelap nav a:focus-visible,
+body.gelap .menu-ponsel summary:hover {
+  background-color: #203449;
+}
+
+body.gelap .kartu {
+  color: #E2EDF5;
+  background-color: #1B2B3D;
+  border-color: #344B60;
+}
+
+body.gelap .daftar-kartu .kartu:nth-child(even) {
+  background-color: #203449;
+}
+
+body.gelap p,
+body.gelap li,
+body.gelap label {
+  color: #B5C7D6;
+}
+
+body.gelap a {
+  color: #4CC9F0;
+}
+
+body.gelap table {
+  color: #E2EDF5;
+  background-color: #1B2B3D;
+}
+
+body.gelap th,
+body.gelap td {
+  border-color: #344B60;
+}
+
+body.gelap tbody tr:nth-child(even) {
+  background-color: #203449;
+}
+
+body.gelap input,
+body.gelap select,
+body.gelap textarea {
+  color: #E2EDF5;
+  background-color: #1B2B3D;
+  border-color: #344B60;
+}
+
+body.gelap .tombol-tema {
+  color: #E2EDF5;
+  border-color: #A8DADC;
+}
+
+body.gelap .tombol-tema:hover,
+body.gelap .tombol-tema:focus-visible {
+  background-color: #203449;
+}
+
+/* 9. Kalkulator nilai */
+.judul-kalkulator {
+  max-width: 42rem;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+.kalkulator {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.form-kalkulator {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 1rem;
+}
+
+.grup-input {
+  flex: 1 1 12rem;
+}
+
+.grup-input label {
+  display: block;
+}
+
+.grup-input input {
+  max-width: none;
+}
+
+.hasil-kalkulator {
+  padding: 1rem;
+  margin: 1.5rem 0 0;
+  background-color: #ECFDF5;
+  border: 1px solid #D1FAE5;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+body.gelap .hasil-kalkulator {
+  color: #E2EDF5;
+  background-color: #203449;
+  border-color: #344B60;
+}
+
+/* 10. Tablet: lebar layar 768px ke atas */
 @media (min-width: 768px) {
   .menu-laptop {
     display: block;
@@ -281,7 +428,7 @@ footer a {
   }
 }
 
-/* 9. Laptop: lebar layar 1024px ke atas */
+/* 11. Laptop: lebar layar 1024px ke atas */
 @media (min-width: 1024px) {
   main {
     padding: 2.5rem 0;

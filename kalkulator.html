@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Nilai | Veri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=veri-features-20261118">
+  <script src="js/tema.js" defer></script>
+  <script src="js/kalkulator.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <h1>Veri</h1>
+      <nav class="menu-laptop" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="proyek.html">Proyek</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="kantinsekolah.html">Kantin Sekolah</a></li>
+          <li><a href="kalkulator.html" aria-current="page">Kalkulator Nilai</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="tombol-tema" class="tombol-tema" aria-pressed="false">Mode Gelap</button>
+      <details class="menu-ponsel">
+        <summary>Menu</summary>
+        <nav aria-label="Navigasi utama">
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="proyek.html">Proyek</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="kantinsekolah.html">Kantin Sekolah</a></li>
+            <li><a href="kalkulator.html" aria-current="page">Kalkulator Nilai</a></li>
+          </ul>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="judul-kalkulator">
+        <h2>Kalkulator Nilai</h2>
+        <p>Hitung rata-rata dan predikat dari nilai tugas, UTS, dan UAS.</p>
+      </section>
+
+      <section class="kartu kalkulator">
+        <form id="form-kalkulator">
+          <div class="form-kalkulator">
+            <div class="grup-input">
+              <label for="nilai-tugas">Nilai Tugas</label>
+              <input type="number" id="nilai-tugas" min="0" max="100" step="any" placeholder="Contoh: 85" required>
+            </div>
+            <div class="grup-input">
+              <label for="nilai-uts">Nilai UTS</label>
+              <input type="number" id="nilai-uts" min="0" max="100" step="any" placeholder="Contoh: 80" required>
+            </div>
+            <div class="grup-input">
+              <label for="nilai-uas">Nilai UAS</label>
+              <input type="number" id="nilai-uas" min="0" max="100" step="any" placeholder="Contoh: 90" required>
+            </div>
+            <button type="submit">Hitung Nilai</button>
+          </div>
+        </form>
+        <p id="hasil-kalkulator" class="hasil-kalkulator" aria-live="polite">Hasil perhitungan akan muncul di sini.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>GitHub: <a href="https://github.com/AkhmadZakiyaAlfarisi4" target="_blank" rel="noopener noreferrer">AkhmadZakiyaAlfarisi4</a></p>
+    <p>&copy; 2026 Veri</p>
+  </footer>
+</body>
+</html>

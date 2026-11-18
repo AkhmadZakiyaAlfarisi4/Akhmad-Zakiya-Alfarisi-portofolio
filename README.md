@@ -7,9 +7,11 @@ Situs: https://akhmad-zakiya-alfarisiportofolio.vercel.app/
 ## Fitur
 
 - Beranda profil dengan avatar GitHub Veri
+- Bagian hobi, fokus belajar, target, keahlian, dan jadwal belajar
 - Halaman proyek dan formulir kontak
 - Halaman Kantin Sekolah
-- Latihan kalkulator nilai dan logika JavaScript di Console browser
+- Kalkulator nilai interaktif dan latihan logika JavaScript di Console browser
+- Mode gelap yang tersimpan saat berpindah halaman
 - Tata letak responsif
 
 ## Teknologi
